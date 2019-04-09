@@ -33,7 +33,8 @@ namespace Multas.Migrations
                new Agentes {ID=7, Nome="Paulo Vieira", Esquadra="Torres Novas", Fotografia="PauloVieira.jpg" },
                new Agentes {ID=8, Nome="Augusto Carvalho", Esquadra="Lisboa", Fotografia="AugustoCarvalho.jpg" },
                new Agentes {ID=9, Nome="Beatriz Pinto", Esquadra="Porto", Fotografia="BeatrizPinto.jpg" },
-               new Agentes {ID=10, Nome="José Alves", Esquadra="Alcanena", Fotografia="JoseAlves.jpg" }
+               new Agentes {ID=10, Nome="José Alves", Esquadra="Alcanena", Fotografia="JoseAlves.jpg" },
+               new Agentes {ID=11, Nome="Vinha", Esquadra="Tomar", Fotografia="" }
 };
             agentes.ForEach(aa => context.Agentes.AddOrUpdate(a => a.Nome, aa));
             context.SaveChanges();
